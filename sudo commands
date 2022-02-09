@@ -1,0 +1,24 @@
+sudo = superuser do
+To add a user
+sudo adduser lorna
+
+To amend to a super user
+
+$ sudo usermod-aG sudo lorna
+-a appends the user to the...
+-G groups
+
+Switching to a certain user:
+$ su - lorna
+
+To exit from that user back to default
+$ exit
+
+Deleting a user
+
+$ sudo userdel frodo
+
+But wouldn't delete the directory 
+
+Downgrades an account privilege from sudo to non sudo
+$ sudo gpasswd -d username sudo
